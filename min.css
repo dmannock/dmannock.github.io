@@ -1,0 +1,727 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {}
+
+body {
+    background-color: #5082FF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.1em;
+    height: 100%;
+    min-height: 100%;
+    min-width: 960px;
+    text-align: center;
+}
+
+a {
+    color: #00F;
+}
+
+a:visited {
+    color: #33F
+}
+
+a:hover {
+    color: #09F;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.3em 0;
+}
+
+h3 {
+    padding: 2px;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+ul>li>ul {
+    margin: 0;
+}
+
+.gradientMain {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.0)));
+    background: -webkit-linear-gradient(top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.0)));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#00FFFFFF, GradientType=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#00FFFFFF, GradientType=0);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0));
+    background: filter:alpha(Opacity=60, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=0, FinishY=40%);
+}
+
+#pageContainer {
+    height: 100%;
+    min-height: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+.cPost {
+    text-align: left;
+}
+
+.cDetails {
+    color: #333;
+    font-size: 0.8em;
+    float: right;
+    margin: 3px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+.vLarge {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.jsLink {
+    color: #00f;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.disabled {
+    color: #CCC;
+    cursor: text;
+}
+
+.hBox {}
+
+.cBox {
+    background-color: #FFF;
+    border: 20px solid #ccc;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+}
+
+.subBox {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.padding {
+    height: 150px;
+    display: block;
+}
+
+.linksWrapper {
+    font-size: 1.1em;
+}
+
+.linksWrapper ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.linksWrapper li {
+    display: inline-block;
+    margin: 5px 4px;
+    line-height: 35px;
+}
+
+.linksWrapper li:hover {}
+
+.linksWrapper li>a {
+    background: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    color: #333;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+
+.linksWrapper li>a:hover {
+    background: #F3F3F3;
+    border: 1px solid #DDD;
+    box-shadow: 0 1px 1px 0 #DDD;
+    -moz-box-shadow: 0 1px 1px 0 #DDD;
+    -webkit-box-shadow: 0 1px 1px 0 #DDD;
+    color: #666;
+}
+
+.linksWrapper li.linkCurrent>a {
+    background: #FCFCFC;
+    border: 1px solid #F3F3F3;
+}
+
+.linkCurrent a {
+    color: #ccc;
+}
+
+#ad,
+#ad a {
+    color: #000;
+}
+
+.dmButton {
+    background: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin: 5px 4px;
+    padding: 4px 6px;
+}
+
+.dmButton:hover {
+    background: #F3F3F3;
+    border: 1px solid #DDD;
+    box-shadow: 0 1px 1px 0 #DDD;
+}
+
+.columnBlock {
+    float: left;
+    padding: 3px;
+    margin: 0.3%;
+}
+
+.columnBlock:hover {
+    background: #F3F3F3;
+    border: 3px solid #DDD;
+    border-radius: 3px;
+    color: #333;
+    padding: 0px;
+}
+
+.centerWrapper {
+    margin: 10px auto;
+}
+
+ul.features {
+    text-align: left;
+}
+
+#controls {
+    margin: 10px;
+}
+
+label {
+    line-height: 1.5em;
+    margin: 3px 0;
+    padding: 0.2em;
+}
+
+label.textInput {
+    float: left;
+    width: 8em;
+}
+
+form,
+input {
+    display: inline;
+    font-size: 1em;
+    margin: 0.1em;
+}
+
+form {
+    text-align: left;
+}
+
+fieldset {
+    background-color: #fff;
+    padding: 10px;
+}
+
+input {
+    margin: 3px 0;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FFC;
+}
+
+textarea {
+    display: block;
+    float: left;
+}
+
+textarea#message {
+    height: 150px;
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+    width: 100%;
+}
+
+.success {
+    color: #090;
+    line-height: 1.5em;
+}
+
+.successBox {
+    color: #090;
+    display: block;
+    padding: 4px;
+}
+
+.alert {
+    color: #F00;
+    line-height: 1.5em;
+}
+
+.alertBox {
+    color: #fff;
+    background-color: #F30;
+    border: 2px solid #900;
+    display: block;
+    padding: 4px;
+}
+
+label.error {
+    color: #FF0000;
+    margin-left: 0.5em;
+}
+
+label.checked {}
+
+#logo {
+    display: block;
+    float: left;
+}
+
+#headerWrapper {
+    margin: 10px 100px;
+}
+
+#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1104;
+    display: none;
+}
+
+#fancybox-loading div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 480px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+}
+
+#fancybox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+}
+
+#fancybox-tmp {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: auto;
+    display: none;
+}
+
+#fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 1101;
+    outline: none;
+    display: none;
+}
+
+#fancybox-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+#fancybox-content {
+    width: 0;
+    height: 0;
+    padding: 0;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1102;
+    border: 0px solid #fff;
+}
+
+#fancybox-hide-sel-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1101;
+}
+
+#fancybox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: transparenturl('/images/fancybox/fancybox.png') -40px 0px;
+    cursor: pointer;
+    z-index: 1103;
+    display: none;
+}
+
+#fancybox-error {
+    color: #444;
+    font: normal 12px/20px Arial;
+    padding: 14px;
+    margin: 0;
+}
+
+#fancybox-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    line-height: 0;
+    vertical-align: top;
+}
+
+#fancybox-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+#fancybox-left,
+#fancybox-right {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    outline: none;
+    background: transparenturl('/images/fancybox/blank.gif');
+    z-index: 1102;
+    display: none;
+}
+
+#fancybox-left {
+    left: 0px;
+}
+
+#fancybox-right {
+    right: 0px;
+}
+
+#fancybox-left-ico,
+#fancybox-right-ico {
+    position: absolute;
+    top: 50%;
+    left: -9999px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 1102;
+    display: block;
+}
+
+#fancybox-left-ico {
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -30px;
+}
+
+#fancybox-right-ico {
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -60px;
+}
+
+#fancybox-left:hover,
+#fancybox-right:hover {
+    visibility: visible;
+}
+
+#fancybox-left:hover span {
+    left: 20px;
+}
+
+#fancybox-right:hover span {
+    left: auto;
+    right: 20px;
+}
+
+.fancybox-bg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1001;
+}
+
+#fancybox-bg-n {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox-x.png');
+}
+
+#fancybox-bg-ne {
+    top: -20px;
+    right: -20px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -162px;
+}
+
+#fancybox-bg-e {
+    top: 0;
+    right: -20px;
+    height: 100%;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox-y.png');
+    background-position: -20px 0px;
+}
+
+#fancybox-bg-se {
+    bottom: -20px;
+    right: -20px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -182px;
+}
+
+#fancybox-bg-s {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox-x.png');
+    background-position: 0px -20px;
+}
+
+#fancybox-bg-sw {
+    bottom: -20px;
+    left: -20px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -142px;
+}
+
+#fancybox-bg-w {
+    top: 0;
+    left: -20px;
+    height: 100%;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox-y.png');
+}
+
+#fancybox-bg-nw {
+    top: -20px;
+    left: -20px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png');
+    background-position: -40px -122px;
+}
+
+#fancybox-title {
+    font-family: Helvetica;
+    font-size: 12px;
+    z-index: 1102;
+}
+
+.fancybox-title-inside {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    position: relative;
+}
+
+.fancybox-title-outside {
+    padding-top: 10px;
+    color: #fff;
+}
+
+.fancybox-title-over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    text-align: left;
+}
+
+#fancybox-title-over {
+    padding: 10px;
+    background-image: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancy_title_over.png');
+    display: block;
+}
+
+.fancybox-title-float {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 32px;
+}
+
+#fancybox-title-float-wrap {
+    border: none;
+    border-collapse: collapse;
+    width: auto;
+}
+
+#fancybox-title-float-wrap td {
+    border: none;
+    white-space: nowrap;
+}
+
+#fancybox-title-float-left {
+    padding: 0 0 0 15px;
+    background: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png') -40px -90px no-repeat;
+}
+
+#fancybox-title-float-main {
+    color: #FFF;
+    line-height: 29px;
+    font-weight: bold;
+    padding: 0 0 3px 0;
+    background: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox-x.png') 0px -40px;
+}
+
+#fancybox-title-float-right {
+    padding: 0 0 0 15px;
+    background: url('/web/20180711075904im_/http://www.danmannock.co.uk/images/fancybox/fancybox.png') -55px -90px no-repeat;
+}
+
+.fancybox-ie6 #fancybox-close {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-left-ico {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-right-ico {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-title-over {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale');
+    zoom: 1;
+}
+
+.fancybox-ie6 #fancybox-title-float-left {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-title-float-main {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-title-float-right {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale');
+}
+
+.fancybox-ie6 #fancybox-bg-w,
+.fancybox-ie6 #fancybox-bg-e,
+.fancybox-ie6 #fancybox-left,
+.fancybox-ie6 #fancybox-right,
+#fancybox-hide-sel-frame {
+    height: expression(this.parentNode.clientHeight + "px");
+}
+
+#fancybox-loading.fancybox-ie6 {
+    position: absolute;
+    margin-top: 0;
+    top: expression((-20 + (document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2) + (ignoreMe=document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop)) + 'px');
+}
+
+#fancybox-loading.fancybox-ie6 div {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale');
+}
+
+.fancybox-ie .fancybox-bg {
+    background: transparent !important;
+}
+
+.fancybox-ie #fancybox-bg-n {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-ne {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-e {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-se {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-s {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-sw {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-w {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-bg-nw {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale');
+}
